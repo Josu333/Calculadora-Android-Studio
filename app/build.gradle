@@ -5,16 +5,19 @@ plugins {
 
 android {
     namespace 'com.josue.e2mdestebanjosue'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.josue.e2mdestebanjosue"
         minSdk 22
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding=true
     }
 
     buildTypes {
@@ -30,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 }
 
 dependencies {
